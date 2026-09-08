@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSILEY - Corretora de Seguros | Proteção, Financiamentos e Investimentos</title>
+
+    <!-- Meta Tags SEO -->
+    <meta name="description"
+        content="Proteja seu patrimônio e a quem você ama com a ROSILEY Corretora de Seguros. Seguros de Automóveis, Vida, Residencial, Empresarial, Consórcios, Financiamentos e Investimentos. Solicite uma cotação rápida via WhatsApp.">
+    <meta name="keywords"
+        content="Rosiley Seguros, Corretora de Seguros, Seguro Auto, Seguro de Vida, Previdência Privada, Seguro Residencial, Seguro Empresarial, Seguro Condomínio, Consórcio, Financiamento, Investimentos, Seguro Garantia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ROSILEY - Corretora de Seguros | Soluções em Proteção e Investimentos">
+    <meta property="og:description"
+        content="Cotação rápida e consultoria especializada em seguros de auto, vida, patrimônio e investimentos. Tradição e segurança para você e sua empresa.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "ROSILEY - Corretora de Seguros",
+      "telephone": "+5519999761429",
+      "priceRange": "$$",
+      "description": "Corretora especializada em Seguros de Automóveis, Vida, Previdência, Residencial, Empresarial, Condomínio, Consórcios, Financiamentos e Investimentos."
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#233762',
+                            blueDark: '#182747',
+                            gold: '#84572D',
+                            goldHover: '#6D4622',
+                            accent: '#D4A373',
+                            whatsapp: '#25D366',
+                            whatsappHover: '#1EBE57'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Header / Navegação -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- Logotipo -->
+            <a href="#" class="logo">
+                <img src="images/logotipo.png" alt="Logotipo da Rosiley Corretora de Seguros">
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#apresentacao" class="hover:text-brand-gold transition-colors">Início</a>
+                <a href="#servicos" class="hover:text-brand-gold transition-colors">Serviços</a>
+                <a href="#equipe" class="hover:text-brand-gold transition-colors">Equipe</a>
+                <a href="#contato" class="hover:text-brand-gold transition-colors">Contato</a>
+            </nav>
+
+            <!-- Botão CTA Topo -->
+            <div class="hidden md:block">
+                <a href="#cotacao"
+                    class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-brand-gold rounded-lg shadow-md hover:bg-brand-goldHover transition-all transform hover:-translate-y-0.5">
+                    Fazer Cotação
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="mobile-menu-btn" aria-label="Abrir menu"
+                class="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#apresentacao"
+                class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-gold transition-colors">Apresentação</a>
+            <a href="#servicos"
+                class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-gold transition-colors">Serviços</a>
+            <a href="#equipe"
+                class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-gold transition-colors">Equipe</a>
+            <a href="#contato"
+                class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-gold transition-colors">Contato</a>
+            <a href="#cotacao"
+                class="block text-center w-full mt-4 px-4 py-3 font-semibold text-white bg-brand-gold rounded-lg shadow hover:bg-brand-goldHover transition-colors">
+                Solicitar Cotação Rápida
+            </a>
+        </div>
+    </header>
+
+    <!-- 1ª SESSÃO: Apresentação -->
+    <section id="apresentacao" class="card-bg relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-blue/10 text-brand-blue text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-shield-halved text-brand-gold"></i>
+                        <span>Tradição, Agilidade e Confiança</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-brand-blue leading-tight tracking-tight">
+                        Proteja o seu futuro e o patrimônio da sua família com quem <span
+                            class="text-brand-gold">entende do assunto.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Na <strong>ROSILEY Corretora de Seguros</strong>, nós combinamos consultoria personalizada com
+                        as melhores soluções do mercado em seguros, consórcios, financiamentos e investimentos para você
+                        viver com tranquilidade total.
+                    </p>
+
+                    <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-xl mx-auto lg:mx-0">
+                        <div class="flex items-center space-x-2 text-slate-700 font-medium text-sm">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Atendimento rápido e humanizado</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700 font-medium text-sm">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>As melhores seguradoras do Brasil</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700 font-medium text-sm">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Soluções sob medida para o seu bolso</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-slate-700 font-medium text-sm">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i>
+                            <span>Suporte completo em caso de sinistro</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#cotacao"
+                            class="px-8 py-4 bg-brand-gold hover:bg-brand-goldHover text-white font-bold rounded-xl shadow-lg transition-all text-center transform hover:-translate-y-0.5">
+                            Simular Cotação Agora
+                        </a>
+                        <a href="#servicos"
+                            class="px-8 py-4 bg-white text-brand-blue border border-slate-200 hover:bg-slate-50 font-semibold rounded-xl transition-all text-center shadow-sm">
+                            Conhecer Nossas Soluções
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div
+                        class="bg-white/95 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-100 relative">
+                        <div
+                            class="absolute -top-3 right-6 bg-brand-blue text-white text-xs font-bold uppercase px-3 py-1 rounded-full shadow">
+                            Atendimento Express
+                        </div>
+                        <h2 class="text-xl font-bold text-brand-blue mb-2">Precisa de proteção imediata?</h2>
+                        <p class="text-sm text-slate-600 mb-6">Fale com nossos consultores especialistas e receba um
+                            comparativo gratuito direto no seu WhatsApp.</p>
+
+                        <a href="https://wa.me/5519999761429?text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20consultoria%20r%C3%A1pida%20sobre%20seguros."
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full flex items-center justify-center space-x-3 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Falar Direto no WhatsApp</span>
+                        </a>
+                        <p class="text-xs text-center text-slate-400 mt-3">Resposta média em menos de 15 minutos em
+                            horário comercial.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2ª SESSÃO: Serviços -->
+    <section id="servicos" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Nossa Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-blue">Soluções completas de Proteção e Finanças
+                </p>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg">Oferecemos portfólio diversificado para garantir que
+                    cada etapa da sua vida e dos seus negócios esteja devidamente protegida.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Seguro de Automóveis</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Proteção contra roubo, furto, colisão e
+                            danos a terceiros com assistência 24h em todo o Brasil para rodar com total tranquilidade.
+                        </p>
+                    </div>
+                    <a href="#cotacao" data-servico="Seguro Automóvel"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Vida e Previdência Privada</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Garanta o amparo financeiro da sua
+                            família no presente e planeje uma aposentadoria tranquila e segura no futuro.</p>
+                    </div>
+                    <a href="#cotacao" data-servico="Seguro de Vida e Previdência"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Seguro Residencial</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Cobertura para incêndios, vendavais,
+                            danos elétricos e roubo, além de serviços emergenciais de encanador, eletricista e chaveiro.
+                        </p>
+                    </div>
+                    <a href="#cotacao" data-servico="Seguro Residencial"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-building font-semibold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Empresarial e Condomínio</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Proteção personalizada para a estrutura
+                            física, equipamentos e responsabilidade civil do seu negócio ou condomínio.</p>
+                    </div>
+                    <a href="#cotacao" data-servico="Seguro Empresarial e Condomínio"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Consórcios e Financiamentos</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Conquiste seu imóvel ou veículo com
+                            planejamento inteligente através de taxas competitivas e consórcios sem juros.</p>
+                    </div>
+                    <a href="#cotacao" data-servico="Consórcios e Financiamentos"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div
+                            class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Investimentos e Seguro Garantia</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Soluções financeiras estratégicas para
+                            fazer seu capital render e garantir o cumprimento de obrigações contratuais e judiciais.</p>
+                    </div>
+                    <a href="#cotacao" data-servico="Investimentos e Seguro Garantia"
+                        class="btn-cotar-servico inline-flex items-center text-sm font-bold text-brand-gold hover:text-brand-goldHover transition-colors">
+                        Cotar este serviço <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SESSÃO: Depoimentos e Avaliações do Google -->
+    <section id="depoimentos" class="py-16 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Cabeçalho com Nota do Google -->
+            <div class="text-center mb-12">
+                <div
+                    class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs sm:text-sm font-semibold mb-3">
+                    <i class="fa-brands fa-google text-red-500"></i>
+                    <span>Avaliações Verificadas no Google</span>
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue">
+                    O que nossos <span class="text-brand-gold">clientes dizem</span>
+                </h2>
+
+                <div class="flex items-center justify-center space-x-2 mt-4">
+                    <span class="text-2xl font-bold text-slate-800">4.8</span>
+                    <div class="flex text-amber-400 text-lg">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-sm text-slate-500">(Excelente reputação no Google)</span>
+                </div>
+            </div>
+
+            <!-- Cards de Avaliações -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Depoimento 1 -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Atendimento excelente! Sempre muito prestativos, esclareceram todas as minhas dúvidas e me
+                            apresentaram a melhor opção para o seguro do meu carro."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-200">
+                        <div
+                            class="w-10 h-10 rounded-full bg-brand-blue text-white font-bold flex items-center justify-center text-sm">
+                            MC
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-800">Marcelo Costa</h4>
+                            <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Excelente suporte quando mais precisei. Tive um sinistro e a equipe cuidou de tudo com
+                            muita agilidade e transparência. Recomendo de olhos fechados!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-200">
+                        <div
+                            class="w-10 h-10 rounded-full bg-brand-gold text-white font-bold flex items-center justify-center text-sm">
+                            FA
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-800">Fernanda Almeida</h4>
+                            <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div
+                    class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            "Preço justo e consultoria honesta. Me ajudaram a escolher o seguro de vida ideal para a
+                            minha família sem empurrar serviços desnecessários."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-200">
+                        <div
+                            class="w-10 h-10 rounded-full bg-slate-700 text-white font-bold flex items-center justify-center text-sm">
+                            RS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-800">Roberto Silva</h4>
+                            <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botão Ver Mais no Google -->
+            <div class="text-center mt-10">
+                <a href="https://share.google/ECaTNkUHEXRq2C7mJ" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 px-6 py-3 border border-slate-300 rounded-xl text-slate-700 font-semibold hover:bg-slate-50 transition-all text-sm shadow-sm">
+                    <i class="fa-brands fa-google text-red-500"></i>
+                    <span>Ver todas as avaliações no Google Meu Negócio</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SESSÃO: Formulário de Cotação Rápida -->
+    <section id="cotacao" class="cotacao-bg py-16 md:py-24 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Faça uma <span class="text-brand-gold">Cotação Rápida</span>
+                </h2>
+                <p class="mt-3 text-slate-300 text-base sm:text-lg">
+                    Preencha os dados abaixo e entraremos em contato com as melhores opções para o seu perfil.
+                </p>
+            </div>
+
+            <!-- Card do Formulário com fundo branco para contraste total -->
+            <div class="bg-white text-slate-800 p-6 sm:p-10 rounded-2xl shadow-2xl border border-slate-100">
+                <form id="form-cotacao" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-semibold text-slate-700 mb-1">Nome
+                                Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
+                        </div>
+
+                        <div>
+                            <label for="telefone" class="block text-sm font-semibold text-slate-700 mb-1">WhatsApp /
+                                Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
+                        </div>
+
+                        <div>
+                            <label for="servico" class="block text-sm font-semibold text-slate-700 mb-1">Tipo de Seguro
+                                / Serviço</label>
+                            <select id="servico" name="servico" required
+                                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all bg-white">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Seguro Auto">Seguro Auto</option>
+                                <option value="Seguro de Vida">Seguro de Vida</option>
+                                <option value="Seguro Residencial">Seguro Residencial</option>
+                                <option value="Seguro Empresarial">Seguro Empresarial</option>
+                                <option value="Consórcios">Consórcios</option>
+                                <option value="Outros Serviços">Outros Serviços</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="mensagem" class="block text-sm font-semibold text-slate-700 mb-1">Observações
+                            (Opcional)</label>
+                        <textarea id="mensagem" name="mensagem" rows="3"
+                            placeholder="Descreva detalhes como modelo do veículo, cidade ou dúvida específica..."
+                            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-4 bg-brand-gold hover:bg-brand-goldHover text-white font-bold text-lg rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Solicitar Cotação via WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+    </section>
+
+    <!-- 3ª SESSÃO: Equipe -->
+    <section id="equipe" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Quem Cuida de Você</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-blue">Especialistas comprometidos com a sua
+                    tranquilidade</p>
+                <p class="mt-4 text-slate-600">Nossa equipe conta com corretores certificados e consultores altamente
+                    qualificados para oferecer atendimento transparente, ético e ágil.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div
+                        class="w-24 h-24 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-blue">Consultoria Especializada</h3>
+                    <p class="text-xs text-brand-gold font-semibold uppercase mb-3">Atendimento Individualizado</p>
+                    <p class="text-slate-600 text-sm">Analisamos rigorosamente o perfil do cliente para encontrar a
+                        apólice com a melhor relação custo-benefício do mercado.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div
+                        class="w-24 h-24 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-blue">Gestão de Sinistros</h3>
+                    <p class="text-xs text-brand-gold font-semibold uppercase mb-3">Suporte nos momentos decisivos</p>
+                    <p class="text-slate-600 text-sm">Acompanhamos você do momento do imprevisto até a indenização
+                        final, eliminando burocracias com a seguradora.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div
+                        class="w-24 h-24 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-blue">Planejamento Financeiro</h3>
+                    <p class="text-xs text-brand-gold font-semibold uppercase mb-3">Investimentos & Consórcios</p>
+                    <p class="text-slate-600 text-sm">Consultores focados em estruturar soluções de investimentos,
+                        previdência e consórcios para expansão patrimonial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4ª SESSÃO: Contato & Localização -->
+    <section id="contato" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-blue">
+                    Fale Conosco & <span class="text-brand-gold">Nossa Localização</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
+                    Estamos prontos para atender você com toda a atenção e agilidade que você merece.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Informações de Contato e Endereço -->
+                <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-slate-100 space-y-6">
+                    <h3 class="text-xl font-bold text-brand-blue mb-4">Canais de Atendimento</h3>
+
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center text-brand-blue text-lg flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Endereço</h4>
+                            <p class="text-sm text-slate-600 mt-0.5"> R. Treze de Maio, 797 - Sl 12 - Cidade Jardim,
+                                Piracicaba - SP, 13400-300</p>
+                            <a href="https://maps.app.goo.gl/tsVZLsEM1A7Vn7jT6" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-xs font-bold text-brand-blue hover:underline inline-block mt-1">
+                                Ver no Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center text-brand-blue text-lg flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Telefone</h4>
+                            <a href="tel:19999761429" class="text-sm text-slate-600 mt-0.5">(19) 99976-1429</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center text-brand-blue text-lg flex-shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800">Horário de Funcionamento</h4>
+                            <p class="text-sm text-slate-600 mt-0.5">Segunda a Sexta: 08:30 às 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-100">
+                        <a href="https://wa.me/5519999761429?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20seguros."
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full flex items-center justify-center space-x-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Iniciar Conversa no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa Integrado (Google Maps Embed) -->
+                <div
+                    class="lg:col-span-7 h-[380px] sm:h-[420px] rounded-2xl overflow-hidden shadow-md border border-slate-200">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9083.807886021781!2d-47.6471701!3d-22.7227743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631a0e8daebe1%3A0xe66ba080ff78de66!2sRosiley%20Corretora%20de%20Seguros!5e0!3m2!1spt-BR!2sbr!4v1788895677889!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-brand-blueDark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-6">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logotipo.png" width="100px" height="100%"
+                            alt="Logotipo da Rosiley Corretora de Seguros">
+                    </a>
+                </div>
+                <div class="md:col-span-6 text-center md:text-right text-xs">
+                    <p><span id="ano-atual"></span> | ROSILEY Corretora de Seguros.
+                    </p>
+                    <a href="https://www.jvsato.com.br"
+                        class="text-brand-gold hover:text-brand-goldHover transition-colors">Desenvolvido por
+                        www.jvsato.com.br
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5519999761429?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank" rel="noopener noreferrer"
+            class="pulse-whatsapp w-16 h-16 bg-brand-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+            aria-label="Falar pelo WhatsApp">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Script JS Externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
