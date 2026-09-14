@@ -123,3 +123,75 @@ body {
     position: relative;
     z-index: 1;
 }
+
+/* Padronização dos ícones de serviços */
+.service-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f4c81;
+    background-color: rgba(15, 76, 129, 0.10);
+}
+
+.service-icon svg,
+.service-icon i,
+.service-icon .fa-solid,
+.service-icon .fa-regular,
+.service-icon .fa-brands {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: currentColor !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon svg path,
+.service-icon svg g,
+.service-icon svg * {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+
+.group > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.group > div > .service-icon {
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.group > div > h3 {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.group > div > hr,
+.group > div > p {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.group > div > hr {
+    margin: 0.75rem 0;
+}
+
+.group > div > p {
+    margin-bottom: 1.5rem;
+}
+
+.group:hover .service-icon,
+.group:active .service-icon,
+.group:focus-within .service-icon {
+    background-color: #0f4c81;
+    color: #ffffff;
+}
