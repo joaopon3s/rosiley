@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const servico = document.getElementById('servico').value; // Corrigido aqui de 'servico-interesse' para 'servico'
             const mensagem = document.getElementById('mensagem').value.trim();
 
-            const numeroWhatsApp = "5519999761429";
+            const numeroWhatsApp = "5519971538470";
 
             let texto = `*NOVA SOLICITAÇÃO DE COTAÇÃO - SITE*\n\n`;
             texto += `*Nome:* ${nome}\n`;
