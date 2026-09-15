@@ -63,8 +63,8 @@ body {
 .card-bg {
     position: relative;
     overflow: hidden;
-    background-color: #ffffff;
-    /* Slate-50 do Tailwind para um fundo suave */
+    background-color: #0f172a;
+    /* Fundo escuro para manter o contraste da seção */
 }
 
 .card-bg::before {
@@ -80,7 +80,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Opacidade ajustada para manter a legibilidade dos textos */
+    /* Opacidade reduzida para preservar contraste do texto */
     opacity: 0.2;
 
     z-index: 0;
@@ -89,6 +89,42 @@ body {
 .card-bg>* {
     position: relative;
     z-index: 1;
+}
+
+#apresentacao [class*="lg:col-span-7"] {
+    color: #ffffff !important;
+}
+
+#apresentacao [class*="lg:col-span-7"] .text-brand-blue {
+    color: #ffffff !important;
+}
+
+#apresentacao [class*="lg:col-span-7"] .text-slate-700,
+#apresentacao [class*="lg:col-span-7"] .text-slate-600,
+#apresentacao [class*="lg:col-span-7"] .text-slate-400 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+#apresentacao [class*="lg:col-span-7"] .text-brand-gold {
+    color: #84572D !important;
+}
+
+#apresentacao a[href="#servicos"].bg-white {
+    color: #233762 !important;
+}
+
+@media (max-width: 767px) {
+    .card-bg::before {
+        background-position: center;
+    }
+}
+
+#mobile-menu-btn.is-open {
+    transform: rotate(90deg);
+}
+
+#mobile-menu-btn.is-open i {
+    transform: rotate(180deg);
 }
 
 /* Background para a Seção de Cotação */
