@@ -65,6 +65,8 @@
 
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-gold selection:text-white">
 
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
     <!-- Header / Navegação -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -75,7 +77,7 @@
             </a>
 
             <!-- Menu Desktop -->
-            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600" aria-label="Navegação principal">
                 <a href="#apresentacao" class="hover:text-brand-gold transition-colors">Início</a>
                 <a href="#servicos" class="hover:text-brand-gold transition-colors">Serviços</a>
                 <a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre</a>
@@ -91,14 +93,14 @@
             </div>
 
             <!-- Botão Menu Mobile -->
-            <button id="mobile-menu-btn" aria-label="Abrir menu"
+            <button id="mobile-menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"
                 class="md:hidden p-2 text-slate-600 hover:text-brand-blue focus:outline-none transition-transform duration-200 ease-in-out">
                 <i class="fa-solid fa-bars text-2xl transition-all duration-300 ease-in-out"></i>
             </button>
         </div>
 
         <!-- Dropdown Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3" aria-label="Menu mobile">
             <a href="#apresentacao"
                 class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-gold transition-colors">Apresentação</a>
             <a href="#servicos"
@@ -113,6 +115,8 @@
             </a>
         </div>
     </header>
+
+    <main id="conteudo-principal">
 
     <!-- 1ª SESSÃO: Apresentação -->
     <section id="apresentacao" class="card-bg relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
@@ -181,6 +185,7 @@
 
                         <a href="https://wa.me/5519971538470?text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20consultoria%20r%C3%A1pida%20sobre%20seguros."
                             target="_blank" rel="noopener noreferrer"
+                            aria-label="Falar direto no WhatsApp, abre em nova aba"
                             class="w-full flex items-center justify-center space-x-3 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                             <span>Falar Direto no WhatsApp</span>
@@ -550,6 +555,7 @@
             <!-- Botão Ver Mais no Google -->
             <div class="text-center mt-10">
                 <a href="https://share.google/ECaTNkUHEXRq2C7mJ" target="_blank" rel="noopener noreferrer"
+                    aria-label="Ver todas as avaliações no Google Meu Negócio, abre em nova aba"
                     class="inline-flex items-center space-x-2 px-6 py-3 border border-slate-300 rounded-xl text-slate-700 font-semibold hover:bg-slate-50 transition-all text-sm shadow-sm">
                     <i class="fa-brands fa-google text-red-500"></i>
                     <span>Ver todas as avaliações no Google Meu Negócio</span>
@@ -580,14 +586,14 @@
                         <div>
                             <label for="nome" class="block text-sm font-semibold text-slate-700 mb-1">Nome
                                 Completo</label>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required
+                            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
 
                         <div>
                             <label for="telefone" class="block text-sm font-semibold text-slate-700 mb-1">WhatsApp /
                                 Telefone</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required
+                            <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
                     </div>
@@ -595,14 +601,14 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" required
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="seu@email.com" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
 
                         <div>
                             <label for="servico" class="block text-sm font-semibold text-slate-700 mb-1">Tipo de Seguro
                                 / Serviço</label>
-                            <select id="servico" name="servico" required
+                            <select id="servico" name="servico" autocomplete="off" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all bg-white">
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="Seguro Automóvel">Seguro Automóvel</option>
@@ -619,9 +625,10 @@
                     <div>
                         <label for="mensagem" class="block text-sm font-semibold text-slate-700 mb-1">Observações
                             (Opcional)</label>
-                        <textarea id="mensagem" name="mensagem" rows="3"
+                        <textarea id="mensagem" name="mensagem" rows="3" aria-describedby="mensagem-ajuda"
                             placeholder="Descreva detalhes como modelo do veículo, cidade ou dúvida específica..."
                             class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all"></textarea>
+                        <p id="mensagem-ajuda" class="sr-only">Campo opcional para informar detalhes sobre sua necessidade.</p>
                     </div>
 
                     <button type="submit"
@@ -637,7 +644,7 @@
     <section id="sobre" class="py-16 md:py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Quem somos</h2>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Nossa História</h2>
                 <p class="text-3xl sm:text-4xl font-extrabold text-brand-blue">Os princípios que guiam a Rosiley</p>
                 <p class="mt-4 text-slate-600">Mais do que oferecer produtos, construímos relações de confiança para ajudar você a proteger o presente e planejar o futuro. A Rosiley nasceu para tornar decisões de proteção e planejamento financeiro mais simples, seguras e alinhadas à realidade de cada cliente.</p>
             </div>
@@ -746,6 +753,7 @@
                                 Piracicaba - SP, 13400-300</p>
                             <a href="https://maps.app.goo.gl/cc13dgrHDyNnxybZ6" target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="Ver endereço no Google Maps, abre em nova aba"
                                 class="text-xs font-bold text-brand-blue hover:underline inline-block mt-1">
                                 Ver no Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                             </a>
@@ -777,6 +785,7 @@
                     <div class="pt-4 border-t border-slate-100">
                         <a href="https://wa.me/5519971538470?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20seguros."
                             target="_blank" rel="noopener noreferrer"
+                            aria-label="Iniciar conversa no WhatsApp, abre em nova aba"
                             class="w-full flex items-center justify-center space-x-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             <span>Iniciar Conversa no WhatsApp</span>
@@ -789,14 +798,16 @@
                     class="lg:col-span-7 h-[380px] sm:h-[420px] rounded-2xl overflow-hidden shadow-md border border-slate-200">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.00929987765895!2d-47.647329912965624!3d-22.72271012192616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6310a33837b5d%3A0xf7c6db092b7c473a!2sUrbancenter!5e0!3m2!1spt-BR!2sbr!4v1789404678442!5m2!1spt-BR!2sbr"
+                        title="Localização da Rosiley Corretora de Seguros no Google Maps"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="strict-origin-when-cross-origin">
                     </iframe>
                 </div>
 
-            </div>
-        </div>
+                </div>
     </section>
+
+            </main>
 
     <!-- Rodapé -->
     <footer class="bg-brand-blueDark text-slate-400 py-12 border-t border-slate-800">
@@ -824,8 +835,8 @@
     <div class="fixed bottom-6 right-6 z-50">
         <a href="https://wa.me/5519971538470?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
             target="_blank" rel="noopener noreferrer"
-            class="pulse-whatsapp w-16 h-16 bg-brand-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
-            aria-label="Falar pelo WhatsApp">
+            aria-label="Falar pelo WhatsApp, abre em nova aba"
+            class="pulse-whatsapp w-16 h-16 bg-brand-whatsapp text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
             <i class="fa-brands fa-whatsapp text-3xl"></i>
         </a>
     </div>

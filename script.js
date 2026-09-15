@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.toggle('hidden', !isOpen);
             menuBtn.classList.toggle('is-open', isOpen);
             menuBtn.setAttribute('aria-expanded', String(isOpen));
+            menuBtn.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
 
             if (menuIcon) {
                 menuIcon.classList.toggle('fa-bars', !isOpen);
@@ -26,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBtn.addEventListener('click', () => {
             const isOpen = mobileMenu.classList.contains('hidden');
             setMenuState(isOpen);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                setMenuState(false);
+                menuBtn.focus();
+            }
         });
 
         document.querySelectorAll('#mobile-menu a').forEach(link => {
