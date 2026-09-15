@@ -31,7 +31,7 @@
     </script>
 
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script>
         tailwind.config = {
             theme: {
@@ -55,12 +55,25 @@
     <!-- Fontes e Ícones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
     <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-gold selection:text-white">
@@ -120,6 +133,7 @@
 
     <!-- 1ª SESSÃO: Apresentação -->
     <section id="apresentacao" class="card-bg relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <img src="images/background.jpg" alt="" fetchpriority="high" decoding="async" class="hero-background-image" aria-hidden="true">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
@@ -186,7 +200,7 @@
                         <a href="https://wa.me/5519971538470?text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20consultoria%20r%C3%A1pida%20sobre%20seguros."
                             target="_blank" rel="noopener noreferrer"
                             aria-label="Falar direto no WhatsApp, abre em nova aba"
-                            class="w-full flex items-center justify-center space-x-3 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all">
+                            class="w-full flex items-center justify-center space-x-3 bg-brand-blue hover:bg-brand-blueDark text-white font-bold py-4 px-6 rounded-xl shadow-md transition-all">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                             <span>Falar Direto no WhatsApp</span>
                         </a>
@@ -488,7 +502,7 @@
                             MC
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-800">Marcelo Costa</h4>
+                            <p class="text-sm font-bold text-slate-800">Marcelo Costa</p>
                             <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
                         </div>
                     </div>
@@ -516,7 +530,7 @@
                             FA
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-800">Fernanda Almeida</h4>
+                            <p class="text-sm font-bold text-slate-800">Fernanda Almeida</p>
                             <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
                         </div>
                     </div>
@@ -544,7 +558,7 @@
                             RS
                         </div>
                         <div>
-                            <h4 class="text-sm font-bold text-slate-800">Roberto Silva</h4>
+                            <p class="text-sm font-bold text-slate-800">Roberto Silva</p>
                             <span class="text-xs text-slate-500">Cliente Verificado no Google</span>
                         </div>
                     </div>
@@ -786,7 +800,7 @@
                         <a href="https://wa.me/5519971538470?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20seguros."
                             target="_blank" rel="noopener noreferrer"
                             aria-label="Iniciar conversa no WhatsApp, abre em nova aba"
-                            class="w-full flex items-center justify-center space-x-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md">
+                            class="w-full flex items-center justify-center space-x-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-brand-blue font-bold py-3.5 px-4 rounded-xl transition-all shadow-md">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             <span>Iniciar Conversa no WhatsApp</span>
                         </a>

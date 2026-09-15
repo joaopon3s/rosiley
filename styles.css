@@ -3,6 +3,31 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* Mantém os ícones visíveis enquanto as fontes do Font Awesome carregam. */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2') format('woff2');
+}
+
 /* Acessibilidade: salto de conteúdo, foco visível e texto para leitores de tela */
 .skip-link {
     position: fixed;
@@ -120,15 +145,31 @@ body {
     width: 100%;
     height: 100%;
 
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     /* Opacidade reduzida para preservar contraste do texto */
-    opacity: 0.2;
+    opacity: 0;
 
     z-index: 0;
+}
+
+.hero-background-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.card-bg > .hero-background-image {
+    position: absolute;
+    z-index: 0;
+}
+
+.card-bg > .max-w-7xl {
+    position: relative;
+    z-index: 1;
 }
 
 .card-bg>* {
@@ -164,8 +205,8 @@ body {
 }
 
 @media (max-width: 767px) {
-    .card-bg::before {
-        background-position: center;
+    .hero-background-image {
+        object-position: center;
     }
 }
 
