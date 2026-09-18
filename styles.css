@@ -357,7 +357,7 @@ body {
 .ticker-track {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 10px;
   width: max-content;
   animation: ticker 28s linear infinite;
 }
